@@ -1,0 +1,36 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{amsmath}
+\usepackage[margin=1in]{geometry}
+\title{A Simple Performance Evaluation of a Classifier}
+\author{Belan Bapir\\Department of Computer Engineering\\Tishk International University}
+\date{December 9, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+This teaching example demonstrates how to structure a scientific document in LaTeX using sections, subsections, equations and automatic cross-references. A hypothetical classification task is used to illustrate accuracy calculation.
+\end{abstract}
+\section{Introduction}
+\label{sec:intro}
+Classification is a common task in computer engineering. Section~\ref{sec:method} explains the evaluation method, and Section~\ref{sec:results} presents an illustrative result.
+\section{Methodology}
+\label{sec:method}
+\subsection{Evaluation Data}
+Assume a classifier is tested on 100 samples, of which 85 are classified correctly.
+\subsection{Performance Metric}
+Accuracy is defined as
+\begin{equation}
+\label{eq:accuracy}
+A=\frac{N_{\mathrm{correct}}}{N_{\mathrm{total}}}\times 100\% .
+\end{equation}
+\section{Results}
+\label{sec:results}
+Using Equation~\eqref{eq:accuracy}, the illustrative accuracy is
+\begin{equation}
+\label{eq:result}
+A=\frac{85}{100}\times 100\%=85\%.
+\end{equation}
+\section{Conclusion}
+Equation~\eqref{eq:result} illustrates how automatic numbering and cross-references support consistent scientific writing.
+\section*{Acknowledgements}
+Prepared as a teaching example for the TIU national LaTeX workshop. The numerical values are hypothetical, not research findings.
+\end{document}
