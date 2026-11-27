@@ -1,12 +1,68 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage{amsmath}
 \usepackage[margin=1in]{geometry}
-% TODO: Define title, author, affiliation and date.
+% TASK 1: Define the title, author and date here (in the preamble).
+% TASK 9: Replace hard-coded section/equation numbers with \ref and \eqref.
 \begin{document}
-% TODO: Display the title and add the abstract.
-% TODO: Create Introduction, Methodology, Results, Conclusion.
-% TODO: Add two subsections under Methodology.
-% TODO: Add labels, equations and automatic cross-references.
-% TODO: Add an unnumbered Acknowledgements heading.
-% Use the target PDF as your guide.
+% TASK 2: Replace the following title block with \maketitle.
+A Simple Performance Evaluation of a Classifier
+
+Belan Bapir\\
+Department of Computer Engineering\\
+Tishk International University\\
+December 9, 2026
+
+% TASK 3: Wrap the abstract text in the abstract environment.
+Abstract
+
+
+This teaching example explains how to calculate classification accuracy using hypothetical data. It also demonstrates the structure of a scientific paper and automatic cross-references.
+
+% TASK 4: Turn this heading into a numbered section.
+
+Introduction
+
+% TASK 6: Add the label: sec:intro
+Classification assigns samples to categories. Section 2 explains the evaluation method, and Section 3 presents an illustrative result.
+% TASK 4: Turn this heading into a numbered section.
+
+Methodology
+
+% TASK 6: Add the label: sec:method
+% TASK 5: Turn this heading into a numbered subsection.
+
+Evaluation Data
+
+Assume a classifier is tested on 100 samples, of which 85 are classified correctly.
+% TASK 5: Turn this heading into a numbered subsection.
+
+Performance Metric
+
+Accuracy is defined as
+% TASK 7: Replace the display math delimiters with the equation environment.
+\[
+% TASK 6: Add the label: eq:accuracy
+A=\frac{N_{\mathrm{correct}}}{N_{\mathrm{total}}}\times 100\% .
+\]
+% TASK 4: Turn this heading into a numbered section.
+
+Results
+
+% TASK 6: Add the label: sec:results
+Using Equation (1), the illustrative accuracy is
+% TASK 7: Replace the display math delimiters with the equation environment.
+\[
+% TASK 6: Add the label: eq:result
+A=\frac{85}{100}\times 100\%=85\%.
+\]
+% TASK 4: Turn this heading into a numbered section.
+
+Conclusion
+
+Equation (2) shows that the classifier correctly identifies 85 out of 100 samples.
+% TASK 8: Make this an unnumbered heading.
+
+Acknowledgements
+
+Prepared as a teaching example for the TIU national LaTeX workshop. The numerical values are hypothetical, not research findings.
 \end{document}
