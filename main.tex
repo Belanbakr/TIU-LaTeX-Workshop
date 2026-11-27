@@ -1,0 +1,71 @@
+\documentclass[11pt,a4paper]{article}
+% Packages for equations, images and citations
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage[margin=1in]{geometry}
+\title{A Simple Performance Evaluation of a Classifier}
+\author{Belan Bapir\\Department of Computer Engineering\\Tishk International University}
+\date{December 9, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+This teaching example explains how to calculate classification accuracy using hypothetical data. It also demonstrates the structure of a scientific paper and automatic cross-references.
+\end{abstract}
+\section{Introduction}
+\label{sec:intro}
+% Textual and parenthetical citations
+\citet{Sokolova2009} discuss performance measures for classification.
+Classification assigns samples to categories. Section~\ref{sec:method} explains the evaluation method, and Section~\ref{sec:results} presents an illustrative result.
+\section{Methodology}
+\label{sec:method}
+\subsection{Evaluation Data}
+Assume a classifier is tested on 100 samples, of which 85 are classified correctly.
+\subsection{Performance Metric}
+Accuracy is one of several measures for evaluating classifiers \citep{Fawcett2006}.
+Accuracy is defined as
+\begin{equation}
+\label{eq:accuracy}
+A=\frac{N_{\mathrm{correct}}}{N_{\mathrm{total}}}\times 100\% .
+\end{equation}
+\section{Results}
+\label{sec:results}
+Using Equation~\eqref{eq:accuracy}, the illustrative accuracy is
+\begin{equation}
+\label{eq:result}
+A=\frac{85}{100}\times 100\%=85\%.
+\end{equation}
+% Figure: caption first, then label for automatic referencing.
+Figure~\ref{fig:accuracy} illustrates the classification results.
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.45\textwidth]{accuracy.png}
+  \caption{Illustrative classification results.}
+  \label{fig:accuracy}
+\end{figure}
+
+% Table: l = left, c = center, r = right; & separates columns.
+Table~\ref{tab:results} summarizes the same hypothetical data.
+\begin{table}[htbp]
+  \centering
+  \caption{Classification performance.}
+  \label{tab:results}
+  \begin{tabular}{|l|c|r|}
+    \hline
+    Outcome & Samples & Percentage \\
+    \hline
+    Correct & 85 & 85\% \\
+    Incorrect & 15 & 15\% \\
+    Total & 100 & 100\% \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\section{Conclusion}
+Equation~\eqref{eq:result} shows that the classifier correctly identifies 85 out of 100 samples.
+\section*{Acknowledgements}
+Prepared as a teaching example for the TIU national LaTeX workshop. The numerical values are hypothetical, not research findings.
+% Generate the reference list from references.bib.
+\bibliographystyle{plainnat}
+\bibliography{references}
+\end{document}

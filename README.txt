@@ -1,5 +1,4 @@
-TIU LaTeX Workshop – combined exercise
-1. In Overleaf choose New Project > Upload Project and upload this ZIP.
-2. Open main.tex and compile. Complete tasks 1–4 in the comments.
-3. Compare your work with solution.tex (select it as Main document to compile).
-The example data are illustrative, not research findings.
+TIU LaTeX Workshop - Complete Demonstration
+Open main.tex in Overleaf and click Recompile.
+All commands are completed: title, abstract, paragraphs, sections, subsections, equations, figure, table, cross-references, citations and bibliography.
+The data are hypothetical. No exercise or manual file upload is required when using the Overleaf import link.
